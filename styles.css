@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-menu {
+    background-color: purple;
+    color: violet;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; 
+    width: auto; 
+    margin-right: 20px;
+}
+.menu-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: tan;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu div {
+    color: gold;
+    padding: 10px 20px;
+}
+
+.menu-item:last-child .submenu {
+    background-color: violet;
+}
+
+.menu-item:last-child .submenu div {
+    color: blue;
+}
